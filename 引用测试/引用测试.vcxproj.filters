@@ -39,5 +39,8 @@
     <ClCompile Include="重新定义链表.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="线性链表实现一元多项式运算.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

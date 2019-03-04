@@ -1,3 +1,4 @@
+//暂时不实现，比较复杂
 #include "malloc.h"
 #define Status int
 #define ElemType int
@@ -14,6 +15,6 @@ typedef struct
 }LinkList;
 Status InitList(LinkList&L)//构造带有头结点的空表
 {
-	L = (LinkList)malloc(sizeof(LinkList));
-
+	//L = (LinkList)malloc(sizeof(LinkList));
+	return 1;
 }

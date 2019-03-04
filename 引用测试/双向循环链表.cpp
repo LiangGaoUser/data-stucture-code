@@ -156,38 +156,38 @@ Status ListDelete_DuL(DuLinkList&L, int i, ElemType e)
 
 
 
-int main()
-{
-	DuLinkList L;
-	InitDuList(L, 5);
-
-	PrintNext_DuL(L, L);
-
-	//DuLinkList s = L->next->next;
-	//PrintNext_DuL(L, s);
-
-	//s = L->prior->prior;
-	//PrintPiror_DuL(L, s);
-
-	printf("&&&&\n");
-
-	ListInsert_DuL(L, 3, 9);
-	PrintNext_DuL(L, L);
-	printf("&&&&\n");
-	ListDelete_DuL(L, 3, 9);
-	PrintNext_DuL(L, L);
-	/*DuLinkList t;
-	t = GetElemP_DuL(L, 5);
-	if (t != NULL)
-	{
-		printf("%d", t->data);
-	}
-	else
-	{
-		printf("NULL");
-	}*/
-	
-	system("pause");
-
-
-}
+//int main()
+//{
+//	DuLinkList L;
+//	InitDuList(L, 5);
+//
+//	PrintNext_DuL(L, L);
+//
+//	//DuLinkList s = L->next->next;
+//	//PrintNext_DuL(L, s);
+//
+//	//s = L->prior->prior;
+//	//PrintPiror_DuL(L, s);
+//
+//	printf("&&&&\n");
+//
+//	ListInsert_DuL(L, 3, 9);
+//	PrintNext_DuL(L, L);
+//	printf("&&&&\n");
+//	ListDelete_DuL(L, 3, 9);
+//	PrintNext_DuL(L, L);
+//	/*DuLinkList t;
+//	t = GetElemP_DuL(L, 5);
+//	if (t != NULL)
+//	{
+//		printf("%d", t->data);
+//	}
+//	else
+//	{
+//		printf("NULL");
+//	}*/
+//	
+//	system("pause");
+//
+//
+//}

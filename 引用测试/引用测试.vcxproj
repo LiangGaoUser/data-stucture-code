@@ -120,6 +120,7 @@
     <ClCompile Include="3.cpp" />
     <ClCompile Include="单链表.cpp" />
     <ClCompile Include="双向循环链表.cpp" />
+    <ClCompile Include="线性链表实现一元多项式运算.cpp" />
     <ClCompile Include="重新定义链表.cpp" />
     <ClCompile Include="静态链表.cpp" />
     <ClCompile Include="顺序表.cpp" />
