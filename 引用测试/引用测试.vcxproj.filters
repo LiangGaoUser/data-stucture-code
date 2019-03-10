@@ -42,5 +42,17 @@
     <ClCompile Include="线性链表实现一元多项式运算.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="顺序栈的实现.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="利用栈检验括号.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="软件测试.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="利用栈实现行编辑程序.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

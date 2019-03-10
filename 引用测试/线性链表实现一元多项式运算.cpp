@@ -181,20 +181,20 @@ Status PrintPloyn(LinkList &P)
 	}
 	return 1;
 }
-int main()
-{
-	LinkList pa, pb,pc;
-	CreatePloyn(pa, 4);
-	PrintPloyn(pa);
-	printf("lengthA %d", PrintLength(pa));
-	CreatePloyn(pb, 4);
-	PrintPloyn(pb);
-	printf("lengthB %d", PrintLength(pb));
-	AddPolyn(pa, pb, pc);
-//	printf("lengthA %d", PrintLength(pa));
-//	printf("lengthB %d", PrintLength(pb));
-	PrintPloyn(pc);
+//int main()
+//{
+//	LinkList pa, pb,pc;
+//	CreatePloyn(pa, 4);
 //	PrintPloyn(pa);
+//	printf("lengthA %d", PrintLength(pa));
+//	CreatePloyn(pb, 4);
 //	PrintPloyn(pb);
-	system("pause");
-}
+//	printf("lengthB %d", PrintLength(pb));
+//	AddPolyn(pa, pb, pc);
+////	printf("lengthA %d", PrintLength(pa));
+////	printf("lengthB %d", PrintLength(pb));
+//	PrintPloyn(pc);
+////	PrintPloyn(pa);
+////	PrintPloyn(pb);
+//	system("pause");
+//}
