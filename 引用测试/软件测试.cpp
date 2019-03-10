@@ -33,108 +33,68 @@ bool EixstDate(int year, int month, int day)
 }
 void NextDate(int year,int month,int day)
 {
-	int Year=year, Month=month, Day=day;
-	if ((year % 4 == 0 && year % 100 != 0)||(year%400==0))
-	{
+		int Year=year, Month=month, Day=day;
 		switch (month)
 		{
-		case 1:
-		case 3:
-		case 5:
-		case 7:
-		case 8:
-		case 10:
-			if (0<day < 30) Day = day + 2;
-			else if(30<=day<=31)
-			{
-				Day = 2 - (31 - day);
-				Month = month + 1;
-			}
-			/*else
-			{
+			case 1:
+			case 3:
+			case 5:
+			case 7:
+			case 8:
+			case 10:
+				if (0<day < 30) Day = day + 2;
+				else if(30<=day<=31)
+				{
+					Day = 2 - (31 - day);
+					Month = month + 1;
+				}
+				break;
+			case 4:
+			case 6:
+			case 9:
+			case 11:
+				if (day < 29) Day = day + 2;
+				else
+				{
+					Day = 2 - (30 - day);
+					Month = month + 1;
+				}
+				break;
+			case 12:
+				if (day < 30) Day = day + 2;
+				else
+				{
+					Day = 2 - (31 - day);
+					Month = 1;
+					Year = Year + 1;
+				}
+				break;
+			case 2:
 
-			}*/
-			break;
-		case 4:
-		case 6:
-		case 9:
-		case 11:
-			if (day < 29) Day = day + 2;
-			else
-			{
-				Day = 2 - (30 - day);
-				Month = month + 1;
-			}
-			break;
-		case 12:
-			if (day < 30) Day = day + 2;
-			else
-			{
-				Day = 2 - (31 - day);
-				Month = 1;
-				Year = Year + 1;
-			}
-			break;
-
-		case 2:
-			if (day < 27) Day = day + 2;
-			else
-			{
-				Day = 2 - (29 - day);
-				Month = month + 1;
-			}
+				if ((year % 4 == 0 && year % 100 != 0) || (year % 400 == 0))
+				{
+					if (day < 27) Day = day + 2;
+					else
+					{
+						Day = 2 - (29 - day);
+						Month = month + 1;
+					}
+				}
+				else
+				{
+					if (day < 26) Day = day + 2;
+					else
+					{
+						Day = 2 - (28 - day);
+						Month = month + 1;
+					}
+				}
+			
 		}
-	}
-	else
-	{
-		switch (month)
-		{
-		case 1:
-		case 3:
-		case 5:
-		case 7:
-		case 8:
-		case 10:
-			if (day < 30) Day = day + 2;
-			else
-			{
-				Day = 2 - (31 - day);
-				Month = month + 1;
-			}
-			break;
-		case 4:
-		case 6:
-		case 9:
-		case 11:
-			if (day < 29) Day = day + 2;
-			else
-			{
-				Day = 2 - (30 - day);
-				Month = month + 1;
-			}
-			break;
-		case 12:
-			if (day < 30) Day = day + 2;
-			else
-			{
-				Day = 2 - (31 - day);
-				Month = 1;
-				Year = Year + 1;
-			}
-			break;
-
-		case 2:
-			if (day < 26) Day = day + 2;
-			else
-			{
-				Day = 2 - (28 - day);
-				Month = month + 1;
-			}
-		}
-	}
+	
 	cout<< year << "年" << month << "月" << day << "日隔一天日期为" << Year << "年" << Month << "月" << Day << "日" << endl;
 }
-/*int main()
+int main()
 {
 	double year,month, day;
 	int year1, month1, day1;
@@ -248,6 +208,6 @@ void NextDate(int year,int month,int day)
 	NextDate(year1, month1, day1);
 	system("pause");
 
-}*/
+}
 
 

@@ -169,8 +169,8 @@ void LineEdit()
 
 
 
-int main()
-{
-	LineEdit();
-	system("pause");
-}
+//int main()
+//{
+//	LineEdit();
+//	system("pause");
+//}
